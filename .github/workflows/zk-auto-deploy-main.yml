@@ -29,6 +29,6 @@ jobs:
          
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npm install --global surge|
+      run: npm install --global surge
     - name: deploying suing surge
       run: surge ./ zksampleone.surge.sh --token ${{secrets.zktoken}} 
